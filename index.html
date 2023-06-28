@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Museu Nacional - Home</title>
+
+        <!-- style normalize -->
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <!-- style do site -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <!--[if lt IE 9]>
+	        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body id="home">
+        <!-- Inicio container -->
+        <div id="container">
+            <!-- area do topo -->
+            <header> <!-- Inicio do header -->
+                <div id="logo">
+                    <h1><a href="index.html">Museu Nacional</a></h1>
+                </div>
+                <nav> <!-- Inicio do nav -->
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Esposições</a></li>
+                        <li><a href="#">Pesquisa</a></li>
+                        <li><a href="#">Acervo</a></li>
+                        <li><a href="#">Vídeo</a></li>
+                        <li><a href="#">Fotos</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav> <!-- Fim do nav -->
+            </header> <!-- Fim do header -->
+
+            <!-- Inicio da area principal -->
+            <div id="principal">
+
+                <!-- Inicio do conteudo principal -->
+                <div id="conteudo"> 
+
+                    <section id="capa"> <!-- Inicio da capa -->
+                        <img src="img/museu.png" alt="capa">
+                    </section> <!-- Fim da capa -->
+
+                    <section id="postagens"> <!-- Inicio das postagens -->
+
+                        <article id="video"> <!-- post 1 -->
+                            <h3>Vídeo: Conheça o museu</h3>
+
+                            <iframe width="310" height="170" 
+                                src="https://www.youtube.com/embed/RGUYb-hivrc" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                                gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+
+                        </article>
+
+                        <article id="mapa"> <!-- post 2 -->
+                            <h3>Mapa: Encontre o museu</h3>
+
+                            <iframe width="310" height="170" 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.171351495368!2d-43.22963612532176!3d-22.907049837879168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-BR!2sbr!4v1687967676583!5m2!1spt-BR!2sbr"
+                                style="border:0;" 
+                                allowfullscreen=""
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+
+                        </article>
+
+                        <article id="exposicoes"> <!-- post 3 -->
+                            <h3>Exposições</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Os assustadores insetos</a>
+                                </li>
+                                <li>
+                                    <a href="#">O crânio de luzia, a mulher
+                                        mais antiga do Brasil</a>
+                                </li>
+                                <li>
+                                    <a href="#">Preguiça gigante e
+                                    tigre-dentes-de-sabre</a>
+                                </li>
+                                <li>
+                                    <a href="#">Plantas do brasil Central</a>
+                                </li>
+                                <li>
+                                    <a href="#">Teresa Cristina: A Imperatriz Arqueóloga</a>
+                                </li>
+                                <li>
+                                    <a href="#">Arte Com Dinossauros - Paleoarte</a>
+                                </li>
+                                <li>
+                                    <a href="#"><strong>Veja todos (65)</strong></a>
+                                </li>
+                            </ul>
+                        </article>
+
+                        <article id="historia"> <!-- post 4 -->
+                            <h3>200 anos de história</h3>
+                            <p>
+                                Numa ponta que avança sobre o mar,
+                                posteriormente conhecida como Ponta do
+                                Calabouço, entre as praias de Piaçaba e Santa
+                                luzia, no centro histórico do Rio de janeiro,
+                                os portugueses construíram em 1603 a Fortaleza
+                                de Santiago, origem do conjunto arquitetônico
+                                que hoje abriga o Museu Histórico Nacional.
+                            </p>
+                            <a href="#"><strong>Leia mais</strong></a>
+                        </article>
+
+                    </section> <!-- Fim das postagens -->
+
+                </div>
+                 <!-- Fim do conteudo principal -->
+
+                <!-- Inicio da area lateral -->
+                <aside> 
+
+                    <section id="depoimento">
+                        <img src="img/depoimento.png" alt="depoimento">
+                    </section>
+
+                    <section id="visita"> <!-- Inicio da area Visita -->
+
+                        <h4>Faça uma visita</h4>
+                        <form id="formulario"> <!-- Inicio da area Formulario -->
+                            <fieldset>
+                                <legend>Selecione uma data</legend>
+
+                                <label for="data">Data</label>
+                                <input class="campo" type="text" id="data" placeholder="dd/mm/aaaa" maxlength="10">
+
+                                <label for="qtd">Qtd pessoas</label>
+                                <input class="campo" type="text" id="qtd" value="1" style="width: 30px;">
+                            </fieldset>
+
+                            <input class="botao" type="submit" value="Verificar disponibilidade">
+                        </form> <!-- Fim da area Formulario -->
+
+                    </section> <!-- Fim da area Visita -->
+
+                    <section id="galeria"> <!-- Inicio da area de galeria -->
+
+                        <h4>Galeria de fotos</h4>
+                        <a href="#">
+                            <img src="img/imagem1.jpg" 
+                            height="93" width="93" alt="descrição de imagem">
+                        </a>
+                        <a href="#">
+                            <img src="img/imagem2.jpg" 
+                            height="93" width="93" alt="descrição de imagem">
+                        </a>
+                        <a href="#">
+                            <img src="img/imagem3.jpg" 
+                            height="93" width="93" alt="descrição de imagem">
+                        </a>
+                        <a href="#">
+                            <img src="img/imagem4.jpg"
+                             height="93" width="93" alt="descrição de imagem">
+                        </a>
+
+                    </section> <!-- Fim da area de galeria -->
+
+                </aside> 
+                <!-- Fim da area lateral -->
+
+                <!-- area final do site -->
+                <!-- Inicio do radapé -->
+                <footer>
+                    <p>
+                        <a href="index.html">Home</a>
+                        <a href="#">Esposições</a>
+                        <a href="#">Pesquisa</a>
+                        <a href="#">Acervo</a>
+                        <a href="#">Vídeo</a>
+                        <a href="#">Fotos</a>
+                        <a href="#">Contato</a>
+                    </p>
+                    <p>
+                        &copy; 2023 <a href="index.html">Museu Nacional</a> - Todos os direitos reservados.
+                    </p>
+                </footer>
+                <!-- Fim do radapé -->
+
+            </div>
+            <!-- Fim da area principal -->
+
+        </div>
+        <!-- Fim container -->
+    </body>
+</html>
